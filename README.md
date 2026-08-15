@@ -24,4 +24,4 @@ theorem hubble_horizon_relation : H_0 = (Real.pi * c) / R_H
 The successful compilation of this theorem guarantees that our mathematical framework is strictly logically sound.
 
 ## Citation & Preprint
-The full scientific paper is available on **Harvard Dataverse**. If you use this framework or the rotation curve code in your research, please cite our preprint as outlined in the repository documentation.
+The full scientific paper is available on **Harvard Dataverse** https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MAYBW5. If you use this framework or the rotation curve code in your research, please cite our preprint as outlined in the repository documentation.
