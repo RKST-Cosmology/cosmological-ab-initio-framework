@@ -55,7 +55,7 @@ N_DIRAC = 2.28e40
 A_CRIT = (C**2 / (R_P * N_DIRAC)) * 0.0745  # Results in ~1.2e-10 m/s^2
 
 # Scalar field coupling parameter (Empirical working value, analytical derivation in progress)
-BETA = 0.1                
+BETA = 0.157                
 
 # =====================================================================
 # 4. LAMBDA-CDM (NFW) REFERENCE PARAMETERS (Unfitted)
