@@ -14,6 +14,24 @@ This repository contains the source code and formal mathematical verification fo
 * [`/verification`](./verification): Features the formal mathematical verification of the core postulates using the **LEAN 4 theorem prover** (`RKST_Core.lean`).
 * [`/paper`](./paper): Reserved for the LaTeX manuscripts, preprints, and cosmological derivation sheets.
 
+## Data & Replication
+
+To keep this repository lightweight and respect the original licensing, the 176 SPARC galaxy data files are not hosted inside this repository. Instead, they can be obtained directly from the official academic source.
+
+### 1. Download the Data
+1. Visit the official SPARC database website: [SPARC Data Access](https://astroweb.case.edu/SPARC/)
+2. Download the galaxy sample data files (the raw `.txt` files containing the rotation curves).
+
+### 2. Local Setup
+1. Click the green **"Code"** button at the top of this GitHub page and select **"Download ZIP"** (or clone the repository) and extract it on your computer.
+2. Inside the extracted main directory, create a folder named `data`.
+3. Inside that `data` folder, create another folder named `sparc_data`.
+4. Place all 176 downloaded galaxy `.txt` files directly into the `data/sparc_data/` directory.
+
+### 3. Execution
+Open `src/sparc_galaxies.py` in your Python environment (e.g., Thonny) and run it. The script will automatically read the data from the relative path and reproduce the cosmological plots.
+
+
 ## Formal Verification via LEAN 4
 
 To ensure absolute mathematical consistency and eliminate any potential derivation errors, the foundational algebraic coupling between the vacuum cutoff $r_p$, the particle horizon $R_H$, and the global expansion rate $H_0$ has been verified using LEAN 4:
