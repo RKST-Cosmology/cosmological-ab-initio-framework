@@ -14,6 +14,28 @@ This repository contains the source code and formal mathematical verification fo
 * [`/verification`](./verification): Features the formal mathematical verification of the core postulates using the **LEAN 4 theorem prover** (`RKST_Core.lean`).
 * [`/paper`](./paper): Reserved for the LaTeX manuscripts, preprints, and cosmological derivation sheets.
 
+## Theoretical Framework & Hubble Solver
+
+This framework implements the local scalar-tensor scaling model to resolve the $5\sigma$ Hubble tension ($H_0$ discrepancy) within the Jordan frame.
+
+### Core Mechanism
+Rather than altering pre-recombination physics, the framework models the local cosmic expansion rate ($H_0^{\text{void}}$) as an environmental boundary effect inside the **Keenan-Barger-Cowie (KBC) super-void** ($\delta \approx -0.4$, $\rho_{\text{ratio}} \approx 0.6$).
+
+The effective local kinematic parameter is calculated analytically via conformal metric scaling:
+
+$$H_0^{\text{void}} = H_0^{\text{Planck}} \times \left(\frac{1}{\rho_{\text{ratio}}}\right)^\beta$$
+
+### Key Parameters & Constraints
+The integrated `hubble_solver.py` utilizes and verifies the following exact cosmological constraints:
+* **Global Baseline ($H_0^{\text{Planck}}$):** $67.4 \pm 0.5 \text{ km s}^{-1}\text{Mpc}^{-1}$
+* **Local Horizon ($H_0^{\text{SH0ES}}$):** $73.04 \pm 1.04 \text{ km s}^{-1}\text{Mpc}^{-1}$
+* **Density Contrast ($\delta$):** $-0.4 \pm 0.1$ (KBC Void Profile)
+* **Universal Coupling Scale ($\beta$):** $\approx 0.1573$
+
+### Environmental Chameleon Screening
+The solver accounts for non-linear Chameleon screening. In high-density environments ($\rho_m \gg \rho_{\text{void}}$), the scalar field $\phi \to 0$, restoring standard General Relativity. This ensures that internal stellar physics, Chandrasekhar limits, and absolute luminosities of standard candles (SNe Ia/Cepheids) remain perfectly unperturbed. The kinematic scaling operates exclusively within the descreened intergalactic vacuum of the void.
+
+
 ## Data & Replication
 
 To keep this repository lightweight and respect the original licensing, the 176 SPARC galaxy data files are not hosted inside this repository. Instead, they can be obtained directly from the official academic source.
